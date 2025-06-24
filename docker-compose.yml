@@ -1,0 +1,9 @@
+services:
+  mi-web:
+    image: nginx:alpine
+    container_name: mi-web
+    restart: always
+    ports:
+      - "8989:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
